@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>motorcyle changer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <video autoplay loop playsineline muted id="myVideo">
+        <source src="kawasaki400.mp4" type="video/mp4">
+</video>
+
+    <body>
+        <div class="banner">
+            <div class="content" id="main" style="display: block;">
+                <h1 class="neon" data-text="NINJA">NINJA 400</h1>
+                <!-- Use a button to show the table with JavaScript -->
+                <button id="myBtn" onclick="myEnter()" class="button">Enter</button>
+            </div>
+            <div class="row" id="motorChangeColor" style="display: none;">
+                <h2 class="neon2" data-text="Motorbike Color Changer">Motorbike Color Changer</h2>
+                <img src="set-a-images/motor.png" id="image">
+                <div class="row">
+                    <p class="col">Generate Ramdom Color</p>
+                    <p class="col">Generate Specific Color</p>
+                </div>
+                <!-- Use a button "Generate" to show ramdom color with JavaScript -->
+                <div class="row">
+                    <button class="d-col-md-2" onclick="myGRC()">Generate</button>
+                    <!-- using a select to choose color with JavaScript -->
+                    <select class="col-sm-3" id="selectId">
+                            <option value="" select disabled hidden>color</option>
+                            <option name="colors" >blue</option>
+                            <option name="colors" >grey</option>
+                            <option name="colors">green</option>
+                            <option name="colors" >yellow</option>
+                            <option value="#ADD8E6">light blue</option>
+                            <option name="colors" >black</option>
+                        </select>
+                </div>
+                <div class="d-sm-table-row">
+                    <!-- Use a button "SHOW" to show Specific color with JavaScript -->
+                    <div class="col-2"></div>
+                    <button class="btnshow" onclick="myGSFshow()">SHOW</button>
+                    <!-- Use a button "Reset" to show Back to color white with JavaScript -->
+                    <button class="btnreset" onclick="myGSCReset()">Reset</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="scriptjs.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
